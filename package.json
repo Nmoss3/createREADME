@@ -1,0 +1,22 @@
+{
+  "name": "createreadme",
+  "version": "1.0.0",
+  "description": "Uses user input to create a README.md",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nmoss3/createREADME.git"
+  },
+  "author": "Nicholas Moss",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nmoss3/createREADME/issues"
+  },
+  "homepage": "https://github.com/Nmoss3/createREADME#readme",
+  "dependencies": {
+    "inquirer": "^8.0.0"
+  }
+}
