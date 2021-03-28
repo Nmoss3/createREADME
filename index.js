@@ -1,9 +1,10 @@
+// variables
 const fs = require("fs");
 const inquirer = require("inquirer");
 const generateMarkdown = require("./utils/generateMarkdown");
 const util = require("util");
 const writeFileAsync = util.promisify(fs.writeFile);
-
+// prompts for user interaction
 function promptUser() {
   return inquirer.prompt([
     {
@@ -24,13 +25,19 @@ function promptUser() {
     {
       type: "input",
       name: "usage",
-      message: "what is this project used for?",
+      message:
+        "Describe how to use the application and show its functionality.",
+    },
+    {
+      type: "input",
+      name: "link",
+      message: "Supply any supporting links",
     },
     {
       type: "list",
       name: "license",
       message: "Choose an appropriate License",
-      choices: ["BSD", "Apache 2.0", "GPL", "MPL 2.0", "Open"],
+      choices: ["BSD", "Apache 2.0", "GPL", "MPL 2.0", "ISC", "GNU GPLv2"],
     },
     {
       type: "input",
@@ -57,6 +64,7 @@ function promptUser() {
       name: "email",
       message: "What is the best email to contact you?",
     },
+    // just for fun
     {
       type: "list",
       name: "tacos",
@@ -65,13 +73,14 @@ function promptUser() {
     },
   ]);
 }
-
+// the great reveal
 async function init() {
   try {
     const answers = await promptUser();
     const generateContent = generateMarkdown(answers);
     await writeFileAsync("./dist/README.md", generateContent);
     console.log("successfuly created a README.md");
+    // error handling
   } catch (err) {
     console.log(err);
   }

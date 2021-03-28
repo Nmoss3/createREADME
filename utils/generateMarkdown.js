@@ -1,24 +1,31 @@
+// General README.md markdown.
 function generateMarkdown(answers) {
   return `
     # ${answers.projectTitle}
 
     ## Description
+
     ${answers.description}
 
     ## Table Of Contents
-    - [Description](#description)
-    - [Installation](#installation)
-    - [Usage](#usage)
-    - [License](#license)
-    - [Contributions](#contributions)
-    - [Tests](#tests)
-    - [Questions](#questions)
+
+    - [Description](#Description)
+    - [Installation](#Installation)
+    - [Usage](#Usage)
+    - [Links](#Links)
+    - [License](#License)
+    - [Contributions](#Contributions)
+    - [Tests](#Tests)
+    - [Questions](#Questions)
 
     ## Installation
     ${answers.installation}
 
     ## Usage
     ${answers.usage}
+
+    ## Links
+    [${answers.link}](${answers.link})
 
     ## License
     ![badge](https://img.shields.io/badge/license-${answers.license}-brightgreen)

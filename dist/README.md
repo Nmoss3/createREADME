@@ -1,38 +1,44 @@
 
-    <h1>createReadme</h1>
+    # This is where you put the title
 
     ## Description
-    The user can input information and a README.md will be created for them
+
+    This is where you put the description
 
     ## Table Of Contents
-    - [Description](#description)
-    - [Installation](#installation)
-    - [Usage](#usage)
-    - [License](#license)
-    - [Contributions](#contributions)
-    - [Tests](#tests)
-    - [Questions](#questions)
+
+    - [Description](#Description)
+    - [Installation](#Installation)
+    - [Usage](#Usage)
+    - [Links](#Links)
+    - [License](#License)
+    - [Contributions](#Contributions)
+    - [Tests](#Tests)
+    - [Questions](#Questions)
 
     ## Installation
-    npm install after cloning code
+    This is where you tell users how to install or view your project
 
     ## Usage
-    This project is used to create a readme file that will satisfy the user for displaying their projects and explaining them
+    Descriptions of how to use the project
+
+    ## Links
+    [add links here](add links here)
 
     ## License
-    ![badge](https://img.shields.io/badge/license-Open-brightgreen)
+    ![badge](https://img.shields.io/badge/license-Apache 2.0-brightgreen)
 
-    This application is covered by the Open license.
+    This application is covered by the Apache 2.0 license.
 
     ## Contributions
-    Nicholas Moss
+    Add who worked on this project created this masterpiece.
 
     ## Tests
-    npm install 
+    description of testing
 
     ## Questions
 
-    Checkout my Github: [Nmoss3](https://github.com/Nmoss3)
+    Checkout my Github: [Github username](https://github.com/Github username)
 
-    Email me with questions at: kappellnick@gmail.com
+    Email me with questions at: email
     
